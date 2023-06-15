@@ -37,6 +37,6 @@
 # # print(len(a))
 #
 # for i in range(len(a)):
-#     if i != ', ' and i != '. ' and i != ' ':
+#     if i != ',' and i != '.' and i != ' ':
 #         wordcount += 1
 # print(wordcount)

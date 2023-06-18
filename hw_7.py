@@ -37,21 +37,28 @@
 #
 # # Exercise 3
 #
-# user_list = [2, 2, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 13, 45, 55, 110, 125, 132, 220, 340, 1055, 1130, 123867432]
-# # этот вариант криво работающий, на большее не хватило "фантазии" 8-)
-#
-# def prime_numbers_list():
-#     count2 = user_list.count(2)
-#     count_of_prime_digits = 0
-#     for i in user_list:
-#         if i / 1 == i and i / i == 1 and i % 2 != 0 and i % 5 != 0:
-#             count_of_prime_digits += 1
-#             if i % 5 == 0:
-#                 count_of_prime_digits -= 1
-#     return count_of_prime_digits + count2
-#
-#
-# print(prime_numbers_list())
+s = [2, 3, 4, 5, 6, 7, 11, 12, 13, 14, 15, 16, 17, 45, 55, 59]
+lst = []
+
+
+def find(a):
+    poz = 0
+    for i in range(1, a + 1):
+        if a % i == 0:
+            poz += 1
+    if poz == 2:
+        lst.append(a)
+
+
+def check():
+    for i in s:
+        find(i)
+    print(f'Count of prime numbers is ', len(lst))
+
+
+check()
+
+
 #
 # ============================================================================
 #

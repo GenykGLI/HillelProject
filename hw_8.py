@@ -1,12 +1,12 @@
 # Exercise 1
 
-# def degree_of_number(number):
-#     if number <= 1:
-#         return 1
-#     return number ** 2 + degree_of_number(number - 1)
-#
-#
-# print(f'The sum of number degree in recursion is', degree_of_number(4))
+def degree_of_number(number):
+    if number <= 1:
+        return 1
+    return number * number + degree_of_number(number - 1)
+
+
+print(f'The sum of number degree in recursion is', degree_of_number(6))
 
 
 ################################################################
